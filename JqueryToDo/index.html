@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JqueryToDo</title>
+    <link rel="stylesheet" href="style/Normalize.css">
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/jquery.datetimepicker.min.css">
+
+    <script src="js/jquery.js"></script>
+    <script src=js/store.js></script>
+    <script src="js/index.js"></script>
+    <script src="js/jquery.datetimepicker.full.js"></script>
+</head>
+<body>
+<div class="msg">
+    <span class="msg-content"></span>
+    <button type="button">知道了</button>
+</div>
+    <div class="container">
+        <h1>我的ToDo</h1>
+        <!--添加清单-->
+        <form class="add-list">
+            <input name="content" type="text" placeholder="e.g.明天早上读英语" autofocus autocomplete="off">
+            <button type="submit"> submit</button>
+        </form>
+        <!--清单列表-->
+        <div class="task-list">
+            <!--<div class="task-item">-->
+                <!--<span><input type="checkbox"></span>-->
+                <!--<span class="content">rrrr</span>-->
+                <!--<span class="detail">详细</span>-->
+                <!--<span class="delete">删除</span>-->
+            <!--</div>-->
+        </div>
+        <div class="task-detail-mask"></div>
+        <!--任务详情-->
+        <div class="list-detail">
+            <div>
+                <div class="input-item content">明天早上读英语</div>
+                <div class="input-item desc"><textarea name="desc"></textarea></div>
+                <div class="input-item remind">
+                    <input type="date">
+                </div>
+                <div class="input-item"><button type="submit">更新</button></div>
+            </div>
+        </div>
+        <video src="alert.mp3" class="video-alert"></video>
+    </div>
+</body>
+</html>

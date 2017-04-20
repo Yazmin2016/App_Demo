@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>thinking</title>
+</head>
+<body>
+<div>
+
+  删除:
+    1.取得删除项在task_list array中的index；
+    2.删除index项
+    3.更新task_list
+
+    标记完成状态：
+    标记按钮的状态通过对象的complete属性来记录；
+    给标记按钮添加监听事件，当点击标记按钮时，更新localstorage中对应对象的complete属性；
+    通过该属性的值控制页面的渲染，具体来说，对未标记的清单项，在页面上从上往下渲染；
+    对标记的清单项，显示在页面的底部，并且在页面上从下往上渲染。
+
+    提醒：
+    监控每一个清单的时间，和当前时间做对比
+    监控函数以一定的周期每隔一段时间执行一次
+
+</div>
+</body>
+</html>
